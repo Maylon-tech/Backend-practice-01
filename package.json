@@ -4,9 +4,13 @@
   "description": "practice of backend",
   "license": "ISC",
   "author": "Nemoto",
-  "type": "modules",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "mongoose": "^9.0.1"
   }
 }
