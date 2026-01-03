@@ -25,13 +25,13 @@ const usersSchema = new Schema({
 )
 
 // Before saving any password we need to hash it (Cryptography)
-usersSchema.pre("save", async function (next) {
-    if (!this.isModified("password")) return next()
+// usersSchema.pre("save", async function (next) {
+//     if (!this.isModified("password")) return next()
     
-    this.password = await bcrypt.hash(this.password, 10)
+//     this.password = await bcrypt.hash(this.password, 10)
 
-    next()
-})
+//     next()
+// })
 
 // Compare passowrds
 usersSchema.methods.comparePassword = async function (password) {
